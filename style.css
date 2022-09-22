@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* header section */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+
+.logo__text {
+    font-size: 2rem;
+    color: #ff7948;
+    font-weight: bold;
+    background: #fafafa;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.nav__link {
+    color: #000;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+.nav__link:hover {
+    color: #ff7948;
+}
+
+.sign__in-btn {
+    background: #ff7948;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 32px;
+    border-radius: 10px;
+    transition: .3s linear;
+}
+
+.sign__in-btn:hover {
+    box-shadow: 2px 2px 15px rgba(255, 145, 0, 0.9);
+}
+
+/* home section */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 5%;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    width: 70%;
+    height: 100vh;
+    background: hsla(46, 100%, 74%, 0.1);
+    position: absolute;
+    right: -110px;
+    top: -125px;
+    z-index: -1;
+    transform: skewX(-20deg);
+}
+
+.container .box {
+    width: 50%;
+}
+
+.container .box h1 {
+    font-size: 3rem;
+    width: 70%;
+    color: #000;
+}
+
+.container .box h1 span {
+    color: #ff7948;
+}
+
+.container .box p {
+    font-size: 1rem;
+    color: #333;
+    width: 60%;
+    padding: 20px 0;
+}
+
+.location__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 8vh;
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.3);
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+
+.location__container input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.location__container input::placeholder {
+    font-size: 1rem;
+    color: #ccc;
+    letter-spacing: 1px;
+    padding: 0 20px;
+}
+
+.location__container i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.map__marker {
+    color: #ff7948;
+    font-size: 1.2rem;
+}
+
+.message__sender {
+    background: #ff7948;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* right_col  */
+
+.col__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 60%;
+    background: #ffaa49;
+    height: 65vh;
+    border-radius: 50% 20% 20% 30%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+}
